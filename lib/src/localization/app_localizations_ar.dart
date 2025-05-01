@@ -9,5 +9,8 @@ class AppLocalizationsAr extends AppLocalizations {
   AppLocalizationsAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get next => 'التالي';
+  String get getStarted => 'البدء';
+
+  @override
+  String get onBoarding => 'فقط مسح واحد لكل شيء';
 }

@@ -1,7 +1,11 @@
 {
     "@@locale": "ar",
-    "next": "التالي",
-    "@next": {
-        "description": "نص زر الإجراء التالي"
+    "getStarted": "البدء",
+    "@getStarted": {
+        "description": "نص زر البدء"
+      },
+      "onBoarding":"فقط مسح واحد لكل شيء",
+      "@onBoarding": {
+        "description": "نص إرشادي لتطبيق"
       }
 }

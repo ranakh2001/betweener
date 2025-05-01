@@ -9,13 +9,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 // ignore: depend_on_referenced_packages
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-
 class AppWidget extends ConsumerWidget {
   const AppWidget({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-     final currentLocale = ref.watch(localeProvider); 
+    final currentLocale = ref.watch(localeProvider);
 
     return ScreenUtilInit(
       splitScreenMode: true,
@@ -27,13 +26,14 @@ class AppWidget extends ConsumerWidget {
             theme: AppTheme.instance.lightTheme,
             darkTheme: AppTheme.instance.darkTheme,
             themeMode: ThemeMode.system,
-        localizationsDelegates: [
-          AppLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: AppLocalizations.supportedLocales,
+            locale: currentLocale,
+            localizationsDelegates: [
+              AppLocalizations.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: AppLocalizations.supportedLocales,
             home: OnBoardingScreen(),
           ),
     );

@@ -1,7 +1,11 @@
 {
     "@@locale": "en",
-    "next": "Next",
-    "@next": {
-        "description": "Button text for next action"
+    "getStarted": "Get Started",
+    "@getStarted": {
+        "description": "Starter button text"
+      },
+      "onBoarding": "Just one scan for everything",
+      "@onBoarding": {
+        "description": "Onboarding text for the app"
       }
 }

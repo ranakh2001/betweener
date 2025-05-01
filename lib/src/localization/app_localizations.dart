@@ -95,11 +95,17 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
-  /// Button text for next action
+  /// Starter button text
   ///
   /// In en, this message translates to:
-  /// **'Next'**
-  String get next;
+  /// **'Get Started'**
+  String get getStarted;
+
+  /// Onboarding text for the app
+  ///
+  /// In en, this message translates to:
+  /// **'Just one scan for everything'**
+  String get onBoarding;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

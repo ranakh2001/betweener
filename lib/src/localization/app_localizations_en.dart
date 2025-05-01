@@ -9,5 +9,8 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get next => 'Next';
+  String get getStarted => 'Get Started';
+
+  @override
+  String get onBoarding => 'Just one scan for everything';
 }
