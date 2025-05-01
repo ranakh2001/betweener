@@ -1,16 +1,11 @@
 # betweener_app
 
-A new Flutter project.
+With this application, you can store all your account links in one place and easily share them with friends. You can also discover people nearby and view their shared accounts effortlessly.
 
-## Getting Started
+A Flutter project with responsive screens, support for both light and dark themes, and localization for Arabic and English. Built using Riverpod for state management, the codebase is structured to be reusable, flexible, and highly maintainable, following best practices for scalable app development.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Image](https://github.com/user-attachments/assets/ce4fabff-a6f0-4051-93bc-c40892938282)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
