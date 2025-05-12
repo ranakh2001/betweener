@@ -178,6 +178,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Don\'t have an account?'**
   String get dontHaveAccount;
+
+  /// name field text
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// input name text
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your name'**
+  String get enterName;
+
+  /// name is required text
+  ///
+  /// In en, this message translates to:
+  /// **'Name is required'**
+  String get nameRequired;
+
+  /// name error text
+  ///
+  /// In en, this message translates to:
+  /// **'Name must be more than 3 characters'**
+  String get nameError;
+
+  /// confirm password text
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Password'**
+  String get confirmPassword;
+
+  /// input confirm password text
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the confirm password'**
+  String get enterConfirmPassword;
+
+  /// confirm password is required text
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm password is required'**
+  String get confirmPasswordRequired;
+
+  /// confirm password error text
+  ///
+  /// In en, this message translates to:
+  /// **'Does not match the password'**
+  String get confirmPasswordError;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

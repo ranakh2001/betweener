@@ -34,4 +34,30 @@ class AuthController extends StateNotifier<bool> {
     }
     return null;
   }
+
+  // name validator
+  String? nameValidator(String? value, context) {
+    if (value == null || value.isEmpty) {
+      return AppLocalizations.of(context).nameRequired;
+    }
+    if (value.length < 3) {
+      return AppLocalizations.of(context).nameError;
+    }
+    return null;
+  }
+
+  // password verification validator
+  String? passwordVerificationValidator(
+    String? value,
+    context,
+    String password,
+  ) {
+    if (value == null || value.isEmpty) {
+      return AppLocalizations.of(context).confirmPasswordRequired;
+    }
+    if (value != password) {
+      return AppLocalizations.of(context).confirmPasswordError;
+    }
+    return null;
+  }
 }

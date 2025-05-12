@@ -49,4 +49,28 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get dontHaveAccount => 'ليس لديك حساب؟';
+
+  @override
+  String get name => 'الاسم';
+
+  @override
+  String get enterName => 'أدخل الاسم';
+
+  @override
+  String get nameRequired => 'الاسم مطلوب';
+
+  @override
+  String get nameError => 'يجب ان يكون الاسم أكثر من 3 أحرف';
+
+  @override
+  String get confirmPassword => 'تأكيد كلمة المرور';
+
+  @override
+  String get enterConfirmPassword => 'أدخل تأكيد كلمة المرور';
+
+  @override
+  String get confirmPasswordRequired => 'تأكيد كلمة المرور مطلوب';
+
+  @override
+  String get confirmPasswordError => 'تأكيد كلمة المرور غير صحيح';
 }

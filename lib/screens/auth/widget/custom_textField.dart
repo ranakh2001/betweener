@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CustomTextfield extends StatelessWidget {
   const CustomTextfield({
     super.key,
-    required this.emailController,
+    required this.controller,
 
     required this.hint,
     this.validator,
@@ -16,7 +16,7 @@ class CustomTextfield extends StatelessWidget {
     this.visible = false,
     required this.keyboardType,
   });
-  final TextEditingController emailController;
+  final TextEditingController controller;
   final String hint;
   final String? Function(String?)? validator;
   final String lable;
@@ -80,7 +80,7 @@ class CustomTextfield extends StatelessWidget {
                     )
                     : null,
           ),
-          controller: emailController,
+          controller: controller,
           validator: validator,
         ),
       ],

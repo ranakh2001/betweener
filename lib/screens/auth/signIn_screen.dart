@@ -2,6 +2,7 @@
 // ignore_for_file: file_names
 
 import 'package:betweener_app/core/constants/const_svgs.dart';
+import 'package:betweener_app/core/constants/routers.dart';
 import 'package:betweener_app/screens/auth/widget/signin_form.dart';
 import 'package:betweener_app/src/localization/app_localizations.dart';
 import 'package:flutter/gestures.dart';
@@ -58,7 +59,13 @@ class SigninScreen extends ConsumerWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                                 recognizer:
-                                    TapGestureRecognizer()..onTap = () {},
+                                    TapGestureRecognizer()
+                                      ..onTap = () {
+                                        Navigator.pushNamed(
+                                          context,
+                                          Routers.register,
+                                        );
+                                      },
                               ),
                             ],
                           ),

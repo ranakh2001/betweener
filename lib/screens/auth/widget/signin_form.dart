@@ -41,7 +41,7 @@ class _SigninForm extends ConsumerState<SigninForm> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomTextfield(
-            emailController: _emailController!,
+            controller: _emailController!,
             lable: AppLocalizations.of(context).email,
             validator: (value) => authController.emailValidator(value, context),
             hint: AppLocalizations.of(context).enterEmail,
@@ -49,7 +49,7 @@ class _SigninForm extends ConsumerState<SigninForm> {
           ),
           SizedBox(height: 16.h),
           CustomTextfield(
-            emailController: _passwordController!,
+            controller: _passwordController!,
             lable: AppLocalizations.of(context).password,
             validator:
                 (value) => authController.passwordValidator(value, context),
@@ -79,6 +79,8 @@ class _SigninForm extends ConsumerState<SigninForm> {
             text: AppLocalizations.of(context).login,
             onPressed: () {
               _formKey.currentState!.validate();
+              _emailController!.clear();
+              _passwordController!.clear();
             },
           ),
         ],

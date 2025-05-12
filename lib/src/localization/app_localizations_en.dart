@@ -49,4 +49,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dontHaveAccount => 'Don\'t have an account?';
+
+  @override
+  String get name => 'Name';
+
+  @override
+  String get enterName => 'Enter your name';
+
+  @override
+  String get nameRequired => 'Name is required';
+
+  @override
+  String get nameError => 'Name must be more than 3 characters';
+
+  @override
+  String get confirmPassword => 'Confirm Password';
+
+  @override
+  String get enterConfirmPassword => 'Enter the confirm password';
+
+  @override
+  String get confirmPasswordRequired => 'Confirm password is required';
+
+  @override
+  String get confirmPasswordError => 'Does not match the password';
 }

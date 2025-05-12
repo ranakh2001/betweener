@@ -55,5 +55,45 @@
       "dontHaveAccount":"ليس لديك حساب؟",
       "@dontHaveAccount": {
         "description": "نص ليس لديك حساب"
+      },
+      "name":"الاسم",
+      "@name": {
+        "description": "نص حقل الاسم"
+      },
+      "enterName":"أدخل الاسم",
+      "@enterName": {
+        "description": "نص إدخال الاسم"
+      },
+      "nameRequired":"الاسم مطلوب",
+      "@nameRequired": {
+        "description": "نص مطلوب الاسم"
+      },
+      "nameError":"يجب ان يكون الاسم أكثر من 3 أحرف",
+      "@nameError": {
+        "description": "نص خطأ الاسم"
+      },
+      "confirmPassword":"تأكيد كلمة المرور",
+      "@confirmPassword": {
+        "description": "نص حقل تأكيد كلمة المرور"
+      },
+      "enterConfirmPassword":"أدخل تأكيد كلمة المرور",
+      "@enterConfirmPassword": {
+        "description": "نص إدخال تأكيد كلمة المرور"
+      },
+      "passwordVerificationRequired":"تأكيد كلمة المرور مطلوب",
+      "@passwordVerificationRequired": {
+        "description": "نص مطلوب تأكيد كلمة المرور"
+      },
+      "passwordVerificationError":"كلمة المرور غير متطابقة",
+      "@passwordVerificationError": {
+        "description": "نص خطأ تأكيد كلمة المرور"
+      },
+      "confirmPasswordRequired":"تأكيد كلمة المرور مطلوب",
+      "@confirmPasswordRequired": {
+        "description": "نص مطلوب تأكيد كلمة المرور"
+      },
+      "confirmPasswordError":"تأكيد كلمة المرور غير صحيح",
+      "@confirmPasswordError": {
+        "description": "نص خطأ تأكيد كلمة المرور"
       }
 }
