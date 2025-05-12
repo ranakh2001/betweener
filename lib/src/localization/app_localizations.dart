@@ -95,11 +95,137 @@ abstract class AppLocalizations {
     Locale('en')
   ];
 
-  /// Button text for next action
+  /// Starter button text
   ///
   /// In en, this message translates to:
-  /// **'Next'**
-  String get next;
+  /// **'Get Started'**
+  String get getStarted;
+
+  /// Onboarding text for the app
+  ///
+  /// In en, this message translates to:
+  /// **'Just one scan for everything'**
+  String get onBoarding;
+
+  /// email field text
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// input email text
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email'**
+  String get enterEmail;
+
+  /// email is required text
+  ///
+  /// In en, this message translates to:
+  /// **'Email is required'**
+  String get emailRequired;
+
+  /// email error text
+  ///
+  /// In en, this message translates to:
+  /// **'Not email'**
+  String get emailError;
+
+  /// password text
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password;
+
+  /// enter password text
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the password'**
+  String get enterPassword;
+
+  /// password is required text
+  ///
+  /// In en, this message translates to:
+  /// **'Password is required'**
+  String get passwordRequired;
+
+  /// passworrd error text
+  ///
+  /// In en, this message translates to:
+  /// **'Password is not correct'**
+  String get passwordError;
+
+  /// Login button text
+  ///
+  /// In en, this message translates to:
+  /// **'Login'**
+  String get login;
+
+  /// Register button text
+  ///
+  /// In en, this message translates to:
+  /// **'Register'**
+  String get register;
+
+  /// Forgot password button text
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot Password?'**
+  String get forgotPassword;
+
+  /// Don't have an account text
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get dontHaveAccount;
+
+  /// name field text
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// input name text
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your name'**
+  String get enterName;
+
+  /// name is required text
+  ///
+  /// In en, this message translates to:
+  /// **'Name is required'**
+  String get nameRequired;
+
+  /// name error text
+  ///
+  /// In en, this message translates to:
+  /// **'Name must be more than 3 characters'**
+  String get nameError;
+
+  /// confirm password text
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Password'**
+  String get confirmPassword;
+
+  /// input confirm password text
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the confirm password'**
+  String get enterConfirmPassword;
+
+  /// confirm password is required text
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm password is required'**
+  String get confirmPasswordRequired;
+
+  /// confirm password error text
+  ///
+  /// In en, this message translates to:
+  /// **'Does not match the password'**
+  String get confirmPasswordError;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -40,7 +40,6 @@ class SettingsService {
   SettingsService(this._pref);
 
   // look if its the first time the app is opened
-  // TODO: use the function in onboarding screen to set the value to true
   Future<void> setIsOpened() async {
     await _pref.setBool('isOpened', true);
   }

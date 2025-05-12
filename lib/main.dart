@@ -13,11 +13,15 @@ void main() async {
   final settingsService = SettingsService(prefs);
   if (!settingsService.isOpend) {
     final deviceLocale =
-        WidgetsBinding.instance.platformDispatcher.locales.first;
+        WidgetsBinding
+            .instance
+            .platformDispatcher
+            .locales
+            .first; // get device local
     final defaultLanguage =
-        deviceLocale.languageCode == 'ar'
-            ? Constants.arLangCode
-            : Constants.enLnagCode;
+        deviceLocale.languageCode == 'en'
+            ? Constants.enLnagCode
+            : Constants.arLangCode;
     await settingsService.setLanguage(defaultLanguage);
   }
 

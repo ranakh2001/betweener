@@ -1,7 +1,91 @@
 {
     "@@locale": "en",
-    "next": "Next",
-    "@next": {
-        "description": "Button text for next action"
+    "getStarted": "Get Started",
+    "@getStarted": {
+        "description": "Starter button text"
+      },
+      "onBoarding": "Just one scan for everything",
+      "@onBoarding": {
+        "description": "Onboarding text for the app"
+      },
+ "email":"Email",
+      "@email": {
+        "description": "email field text"
+      },
+      "enterEmail":"Enter your email",
+      "@enterEmail": {
+        "description": "input email text"
+      },
+      "emailRequired":"Email is required" ,
+      "@emailRequired": {
+        "description": "email is required text"
+      },
+      "emailError":"Not email",
+      "@emailError": {
+        "description": "email error text"
+      },
+      "password":"Password",
+      "@password": {
+        "description": "password text"
+      },
+      "enterPassword":"Enter the password",
+      "@enterPassword": {
+        "description": "enter password text"
+      },
+      "passwordRequired":"Password is required",
+      "@passwordRequired": {
+        "description": "password is required text"
+      },
+      "passwordError":"Password is not correct",
+      "@passwordError": {
+        "description": "passworrd error text"
+      },
+      "login": "Login",
+      "@login": {
+        "description": "Login button text"
+      },
+      "register": "Register",
+      "@register": {
+        "description": "Register button text"
+      },
+      "forgotPassword": "Forgot Password?",
+      "@forgotPassword": {
+        "description": "Forgot password button text"
+      },
+      "dontHaveAccount": "Don't have an account?",
+      "@dontHaveAccount": {
+        "description": "Don't have an account text"
+      },
+      "name":"Name",
+      "@name": {
+        "description": "name field text"
+      },
+      "enterName":"Enter your name",
+      "@enterName": {
+        "description": "input name text"
+      },
+      "nameRequired":"Name is required",
+      "@nameRequired": {
+        "description": "name is required text"
+      },
+      "nameError":"Name must be more than 3 characters",
+      "@nameError": {
+        "description": "name error text"
+      },
+      "confirmPassword":"Confirm Password",
+      "@confirmPassword": {
+        "description": "confirm password text"
+      },
+      "enterConfirmPassword":"Enter the confirm password",
+      "@enterConfirmPassword": {
+        "description": "input confirm password text"
+      },
+      "confirmPasswordRequired":"Confirm password is required",
+      "@confirmPasswordRequired": {
+        "description": "confirm password is required text"
+      },
+      "confirmPasswordError":"Does not match the password",
+      "@confirmPasswordError": {
+        "description": "confirm password error text"
       }
 }
