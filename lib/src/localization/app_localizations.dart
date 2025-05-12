@@ -107,52 +107,52 @@ abstract class AppLocalizations {
   /// **'Just one scan for everything'**
   String get onBoarding;
 
-  /// Email field text
+  /// email field text
   ///
   /// In en, this message translates to:
   /// **'Email'**
   String get email;
 
-  /// Email input text
+  /// input email text
   ///
   /// In en, this message translates to:
   /// **'Enter your email'**
   String get enterEmail;
 
-  /// Email required text
+  /// email is required text
   ///
   /// In en, this message translates to:
   /// **'Email is required'**
   String get emailRequired;
 
-  /// Email error text
+  /// email error text
   ///
   /// In en, this message translates to:
-  /// **'Email is not valid'**
+  /// **'Not email'**
   String get emailError;
 
-  /// Password field text
+  /// password text
   ///
   /// In en, this message translates to:
   /// **'Password'**
   String get password;
 
-  /// Password input text
+  /// enter password text
   ///
   /// In en, this message translates to:
-  /// **'Enter your password'**
+  /// **'Enter the password'**
   String get enterPassword;
 
-  /// Password required text
+  /// password is required text
   ///
   /// In en, this message translates to:
   /// **'Password is required'**
   String get passwordRequired;
 
-  /// Password error text
+  /// passworrd error text
   ///
   /// In en, this message translates to:
-  /// **'Password is not valid'**
+  /// **'Password is not correct'**
   String get passwordError;
 
   /// Login button text
@@ -172,6 +172,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Forgot Password?'**
   String get forgotPassword;
+
+  /// Don't have an account text
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get dontHaveAccount;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

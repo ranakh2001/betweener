@@ -51,5 +51,9 @@
       "forgotPassword":"نسيت كلمة المرور",
       "@forgotPassword": {
         "description": "نص زر نسيت كلمة المرور"
+      }, 
+      "dontHaveAccount":"ليس لديك حساب؟",
+      "@dontHaveAccount": {
+        "description": "نص ليس لديك حساب"
       }
 }

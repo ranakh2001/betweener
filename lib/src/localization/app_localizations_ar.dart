@@ -46,4 +46,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get forgotPassword => 'نسيت كلمة المرور';
+
+  @override
+  String get dontHaveAccount => 'ليس لديك حساب؟';
 }

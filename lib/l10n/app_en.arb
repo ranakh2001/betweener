@@ -8,37 +8,37 @@
       "@onBoarding": {
         "description": "Onboarding text for the app"
       },
-      "email": "Email",
+ "email":"Email",
       "@email": {
-        "description": "Email field text"
+        "description": "email field text"
       },
-      "enterEmail": "Enter your email",
+      "enterEmail":"Enter your email",
       "@enterEmail": {
-        "description": "Email input text"
+        "description": "input email text"
       },
-      "emailRequired": "Email is required",
+      "emailRequired":"Email is required" ,
       "@emailRequired": {
-        "description": "Email required text"
+        "description": "email is required text"
       },
-      "emailError": "Email is not valid",
+      "emailError":"Not email",
       "@emailError": {
-        "description": "Email error text"
+        "description": "email error text"
       },
-      "password": "Password",
+      "password":"Password",
       "@password": {
-        "description": "Password field text"
+        "description": "password text"
       },
-      "enterPassword": "Enter your password",
+      "enterPassword":"Enter the password",
       "@enterPassword": {
-        "description": "Password input text"
+        "description": "enter password text"
       },
-      "passwordRequired": "Password is required",
+      "passwordRequired":"Password is required",
       "@passwordRequired": {
-        "description": "Password required text"
+        "description": "password is required text"
       },
-      "passwordError": "Password is not valid",
+      "passwordError":"Password is not correct",
       "@passwordError": {
-        "description": "Password error text"
+        "description": "passworrd error text"
       },
       "login": "Login",
       "@login": {
@@ -51,5 +51,9 @@
       "forgotPassword": "Forgot Password?",
       "@forgotPassword": {
         "description": "Forgot password button text"
+      },
+      "dontHaveAccount": "Don't have an account?",
+      "@dontHaveAccount": {
+        "description": "Don't have an account text"
       }
 }

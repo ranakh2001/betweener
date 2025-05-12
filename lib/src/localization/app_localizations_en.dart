@@ -24,19 +24,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get emailRequired => 'Email is required';
 
   @override
-  String get emailError => 'Email is not valid';
+  String get emailError => 'Not email';
 
   @override
   String get password => 'Password';
 
   @override
-  String get enterPassword => 'Enter your password';
+  String get enterPassword => 'Enter the password';
 
   @override
   String get passwordRequired => 'Password is required';
 
   @override
-  String get passwordError => 'Password is not valid';
+  String get passwordError => 'Password is not correct';
 
   @override
   String get login => 'Login';
@@ -46,4 +46,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get forgotPassword => 'Forgot Password?';
+
+  @override
+  String get dontHaveAccount => 'Don\'t have an account?';
 }

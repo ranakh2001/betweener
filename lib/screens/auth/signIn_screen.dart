@@ -2,9 +2,7 @@
 // ignore_for_file: file_names
 
 import 'package:betweener_app/core/constants/const_svgs.dart';
-import 'package:betweener_app/providers/auth_provider.dart';
-import 'package:betweener_app/screens/auth/widget/custom_button.dart';
-import 'package:betweener_app/screens/auth/widget/custom_textField.dart';
+import 'package:betweener_app/screens/auth/widget/signin_form.dart';
 import 'package:betweener_app/src/localization/app_localizations.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -12,36 +10,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SigninScreen extends ConsumerStatefulWidget {
+class SigninScreen extends ConsumerWidget {
   const SigninScreen({super.key});
-
   @override
-  ConsumerState<SigninScreen> createState() => _SigninScreenState();
-}
-
-class _SigninScreenState extends ConsumerState<SigninScreen> {
-  final _formKey = GlobalKey<FormState>();
-  TextEditingController? _emailController;
-  TextEditingController? _passwordController;
-  @override
-  void initState() {
-    _emailController = TextEditingController();
-    _passwordController = TextEditingController();
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _emailController?.dispose();
-    _passwordController?.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final authController = ref.read(authProvider.notifier);
-    final isPasswordVisible = ref.watch(authProvider);
-
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
       body: SafeArea(
@@ -64,93 +36,32 @@ class _SigninScreenState extends ConsumerState<SigninScreen> {
                         ),
                       ),
                       SizedBox(height: 24.h),
-                      Form(
-                        key: _formKey,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            CustomTextfield(
-                              emailController: _emailController!,
-                              lable: AppLocalizations.of(context).email,
-                              validator:
-                                  (value) => authController.emailValidator(
-                                    value,
-                                    context,
-                                  ),
-                              hint: AppLocalizations.of(context).enterEmail,
-                              keyboardType: TextInputType.emailAddress,
+                      SigninForm(),
+                      SizedBox(height: 16.h),
+                      Center(
+                        child: RichText(
+                          text: TextSpan(
+                            text:
+                                "${AppLocalizations.of(context).dontHaveAccount} ",
+                            style: Theme.of(
+                              context,
+                            ).textTheme.titleSmall!.copyWith(
+                              color: Theme.of(context).colorScheme.onSurface,
                             ),
-                            SizedBox(height: 16.h),
-                            CustomTextfield(
-                              emailController: _passwordController!,
-                              lable: AppLocalizations.of(context).password,
-                              validator:
-                                  (value) => authController.passwordValidator(
-                                    value,
-                                    context,
-                                  ),
-                              hint: AppLocalizations.of(context).enterPassword,
-                              isPassword: true,
-                              onTap: authController.togglePasswordVisibility,
-                              visible: isPasswordVisible,
-                              keyboardType: TextInputType.visiblePassword,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                TextButton(
-                                  style: TextButton.styleFrom(
-                                    padding: EdgeInsets.zero,
-                                  ),
-                                  onPressed: () {},
-                                  child: Text(
-                                    AppLocalizations.of(context).forgotPassword,
-                                    style: Theme.of(
-                                      context,
-                                    ).textTheme.bodySmall!.copyWith(
-                                      color:
-                                          Theme.of(context).colorScheme.error,
-                                    ),
-                                  ),
+                            children: [
+                              TextSpan(
+                                text: AppLocalizations.of(context).register,
+                                style: Theme.of(
+                                  context,
+                                ).textTheme.titleSmall!.copyWith(
+                                  color: Theme.of(context).colorScheme.primary,
+                                  fontWeight: FontWeight.bold,
                                 ),
-                              ],
-                            ),
-                            SizedBox(height: 8.h),
-                            CustomButton(
-                              text: AppLocalizations.of(context).login,
-                              onPressed: () {},
-                            ),
-                            SizedBox(height: 16.h),
-                            Center(
-                              child: RichText(
-                                text: TextSpan(
-                                  text: "Don’t have an account already? ",
-                                  style: Theme.of(
-                                    context,
-                                  ).textTheme.titleSmall!.copyWith(
-                                    color:
-                                        Theme.of(context).colorScheme.onSurface,
-                                  ),
-                                  children: [
-                                    TextSpan(
-                                      text: "Sign Up",
-                                      style: Theme.of(
-                                        context,
-                                      ).textTheme.titleSmall!.copyWith(
-                                        color:
-                                            Theme.of(
-                                              context,
-                                            ).colorScheme.primary,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                      recognizer:
-                                          TapGestureRecognizer()..onTap = () {},
-                                    ),
-                                  ],
-                                ),
+                                recognizer:
+                                    TapGestureRecognizer()..onTap = () {},
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ],

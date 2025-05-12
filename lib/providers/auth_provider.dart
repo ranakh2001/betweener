@@ -1,3 +1,4 @@
+import 'package:betweener_app/src/localization/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final authProvider = StateNotifierProvider<AuthController, bool>((ref) {
@@ -5,7 +6,7 @@ final authProvider = StateNotifierProvider<AuthController, bool>((ref) {
 });
 
 class AuthController extends StateNotifier<bool> {
-  AuthController() : super(true); 
+  AuthController() : super(true);
 
   // toggle password visibility
   void togglePasswordVisibility() {
@@ -15,10 +16,10 @@ class AuthController extends StateNotifier<bool> {
   // email validator
   String? emailValidator(String? value, context) {
     if (value == null || value.isEmpty) {
-      return "البريد الإلكتروني مطلوب";
+      return AppLocalizations.of(context).emailRequired;
     }
     if (!RegExp(r'^[^@]+@[^@]+\.[^@]+').hasMatch(value)) {
-      return "صيغة البريد الإلكتروني خاطئة";
+      return AppLocalizations.of(context).emailError;
     }
     return null;
   }
@@ -26,10 +27,10 @@ class AuthController extends StateNotifier<bool> {
   // password validator
   String? passwordValidator(String? value, context) {
     if (value == null || value.isEmpty) {
-      return "كلمة المرور مطلوبة";
+      return AppLocalizations.of(context).passwordRequired;
     }
     if (value.length < 6) {
-      return "كلمة المرور يجب أن تكون 6 أحرف على الأقل";
+      return AppLocalizations.of(context).passwordError;
     }
     return null;
   }
