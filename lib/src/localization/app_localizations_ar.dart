@@ -13,4 +13,37 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onBoarding => 'فقط مسح واحد لكل شيء';
+
+  @override
+  String get email => 'البريد الالكتروني';
+
+  @override
+  String get enterEmail => 'أدخل البريد الالكتروني';
+
+  @override
+  String get emailRequired => 'البريد الالكتروني مطلوب';
+
+  @override
+  String get emailError => 'البريد الالكتروني غير صحيح';
+
+  @override
+  String get password => 'كلمة المرور';
+
+  @override
+  String get enterPassword => 'أدخل كلمة المرور';
+
+  @override
+  String get passwordRequired => 'كلمة المرور مطلوبة';
+
+  @override
+  String get passwordError => 'كلمة المرور غير صحيحة';
+
+  @override
+  String get login => 'تسجيل الدخول';
+
+  @override
+  String get register => 'تسجيل';
+
+  @override
+  String get forgotPassword => 'نسيت كلمة المرور';
 }

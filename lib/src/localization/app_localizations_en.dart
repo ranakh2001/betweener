@@ -13,4 +13,37 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onBoarding => 'Just one scan for everything';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get enterEmail => 'Enter your email';
+
+  @override
+  String get emailRequired => 'Email is required';
+
+  @override
+  String get emailError => 'Email is not valid';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get enterPassword => 'Enter your password';
+
+  @override
+  String get passwordRequired => 'Password is required';
+
+  @override
+  String get passwordError => 'Password is not valid';
+
+  @override
+  String get login => 'Login';
+
+  @override
+  String get register => 'Register';
+
+  @override
+  String get forgotPassword => 'Forgot Password?';
 }

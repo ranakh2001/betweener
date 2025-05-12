@@ -7,5 +7,49 @@
       "onBoarding": "Just one scan for everything",
       "@onBoarding": {
         "description": "Onboarding text for the app"
+      },
+      "email": "Email",
+      "@email": {
+        "description": "Email field text"
+      },
+      "enterEmail": "Enter your email",
+      "@enterEmail": {
+        "description": "Email input text"
+      },
+      "emailRequired": "Email is required",
+      "@emailRequired": {
+        "description": "Email required text"
+      },
+      "emailError": "Email is not valid",
+      "@emailError": {
+        "description": "Email error text"
+      },
+      "password": "Password",
+      "@password": {
+        "description": "Password field text"
+      },
+      "enterPassword": "Enter your password",
+      "@enterPassword": {
+        "description": "Password input text"
+      },
+      "passwordRequired": "Password is required",
+      "@passwordRequired": {
+        "description": "Password required text"
+      },
+      "passwordError": "Password is not valid",
+      "@passwordError": {
+        "description": "Password error text"
+      },
+      "login": "Login",
+      "@login": {
+        "description": "Login button text"
+      },
+      "register": "Register",
+      "@register": {
+        "description": "Register button text"
+      },
+      "forgotPassword": "Forgot Password?",
+      "@forgotPassword": {
+        "description": "Forgot password button text"
       }
 }

@@ -1,6 +1,7 @@
 import 'package:betweener_app/core/constants/const_svgs.dart';
+import 'package:betweener_app/core/constants/routers.dart';
 import 'package:betweener_app/core/theme/app_size.dart';
-import 'package:betweener_app/providers/shared_pref_provider.dart';
+// import 'package:betweener_app/providers/shared_pref_provider.dart';
 import 'package:betweener_app/screens/auth/widget/custom_button.dart';
 import 'package:betweener_app/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class OnBoardingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final settingsProvider = ref.watch(settingsServiceProvider);
+    // final settingsProvider = ref.watch(settingsServiceProvider);
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w),
@@ -37,6 +38,11 @@ class OnBoardingScreen extends ConsumerWidget {
               text: AppLocalizations.of(context).getStarted,
               onPressed: () {
                 // settingsProvider.setIsOpened();
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  Routers.login,
+                  (route) => false,
+                );
               },
             ),
           ],

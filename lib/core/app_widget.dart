@@ -1,7 +1,9 @@
 import 'package:betweener_app/core/constants/constants.dart';
+import 'package:betweener_app/core/constants/routers.dart';
 import 'package:betweener_app/core/theme/app_theme.dart';
 import 'package:betweener_app/providers/shared_pref_provider.dart';
 import 'package:betweener_app/screens/auth/on_boarding_screen.dart';
+import 'package:betweener_app/screens/auth/signIn_screen.dart';
 import 'package:betweener_app/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -15,6 +17,7 @@ class AppWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final currentLocale = ref.watch(localeProvider);
+    final settingsProvider = ref.watch(settingsServiceProvider);
 
     return ScreenUtilInit(
       splitScreenMode: true,
@@ -34,7 +37,12 @@ class AppWidget extends ConsumerWidget {
               GlobalCupertinoLocalizations.delegate,
             ],
             supportedLocales: AppLocalizations.supportedLocales,
-            home: OnBoardingScreen(),
+            home:
+                settingsProvider.isOpend ? SigninScreen() : OnBoardingScreen(),
+            routes: {
+              Routers.onBoarding: (context) => const OnBoardingScreen(),
+              Routers.login: (context) => const SigninScreen(),
+            },
           ),
     );
   }

@@ -7,5 +7,49 @@
       "onBoarding":"فقط مسح واحد لكل شيء",
       "@onBoarding": {
         "description": "نص إرشادي لتطبيق"
+      },
+      "email":"البريد الالكتروني",
+      "@email": {
+        "description": "نص حقل البريد الالكتروني"
+      },
+      "enterEmail":"أدخل البريد الالكتروني",
+      "@enterEmail": {
+        "description": "نص إدخال البريد الالكتروني"
+      },
+      "emailRequired":"البريد الالكتروني مطلوب",
+      "@emailRequired": {
+        "description": "نص مطلوب البريد الالكتروني"
+      },
+      "emailError":"البريد الالكتروني غير صحيح",
+      "@emailError": {
+        "description": "نص خطأ البريد الالكتروني"
+      },
+      "password":"كلمة المرور",
+      "@password": {
+        "description": "نص حقل كلمة المرور"
+      },
+      "enterPassword":"أدخل كلمة المرور",
+      "@enterPassword": {
+        "description": "نص إدخال كلمة المرور"
+      },
+      "passwordRequired":"كلمة المرور مطلوبة",
+      "@passwordRequired": {
+        "description": "نص مطلوب كلمة المرور"
+      },
+      "passwordError":"كلمة المرور غير صحيحة",
+      "@passwordError": {
+        "description": "نص خطأ كلمة المرور"
+      },
+      "login":"تسجيل الدخول",
+      "@login": {
+        "description": "نص زر تسجيل الدخول"
+      },
+      "register":"تسجيل",
+      "@register": {
+        "description": "نص زر التسجيل"
+      },
+      "forgotPassword":"نسيت كلمة المرور",
+      "@forgotPassword": {
+        "description": "نص زر نسيت كلمة المرور"
       }
 }
