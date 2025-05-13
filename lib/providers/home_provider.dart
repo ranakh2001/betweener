@@ -12,7 +12,7 @@ final navIndexProvider = StateNotifierProvider<NavIndexController, int>(
 );
 
 class NavIndexController extends StateNotifier<int> {
-  NavIndexController() : super(0);
+  NavIndexController() : super(1); // Default index is set to 1 (Home screen)
 
   double unSelectedIconSize = 24.0;
   double selectedIconSize = 28.0;
