@@ -5,6 +5,7 @@ import 'package:betweener_app/providers/shared_pref_provider.dart';
 import 'package:betweener_app/screens/auth/on_boarding_screen.dart';
 import 'package:betweener_app/screens/auth/signIn_screen.dart';
 import 'package:betweener_app/screens/auth/signUp_screen.dart';
+import 'package:betweener_app/screens/home/app_home.dart';
 import 'package:betweener_app/src/localization/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -43,7 +44,8 @@ class AppWidget extends ConsumerWidget {
             routes: {
               Routers.onBoarding: (context) => const OnBoardingScreen(),
               Routers.login: (context) => const SigninScreen(),
-              Routers.register: (context)=> SignupScreen()
+              Routers.register: (context)=> SignupScreen(),
+              Routers.home: (context)=> const AppHome()
             },
           ),
     );

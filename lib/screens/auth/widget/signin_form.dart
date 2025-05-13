@@ -1,3 +1,4 @@
+import 'package:betweener_app/core/constants/routers.dart';
 import 'package:betweener_app/providers/auth_provider.dart';
 import 'package:betweener_app/screens/auth/widget/custom_button.dart';
 import 'package:betweener_app/screens/auth/widget/custom_textField.dart';
@@ -81,6 +82,11 @@ class _SigninForm extends ConsumerState<SigninForm> {
               _formKey.currentState!.validate();
               _emailController!.clear();
               _passwordController!.clear();
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                Routers.home,
+                (router) => false,
+              );
             },
           ),
         ],
