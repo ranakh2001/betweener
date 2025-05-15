@@ -87,5 +87,13 @@
       "confirmPasswordError":"Does not match the password",
       "@confirmPasswordError": {
         "description": "confirm password error text"
+      },
+      "activeSharing":"Active Sharing",
+      "@activeSharing": {
+        "description": "Active Sharing text"
+      },
+      "addMore":"Add more",
+      "@addMore": {
+        "description": "Add more text"
       }
 }

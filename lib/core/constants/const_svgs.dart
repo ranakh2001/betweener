@@ -6,4 +6,5 @@ class ConstSvgs {
   static const String qrCode = "$path/qr_code.svg";
   static const String searchIcon = "$path/search.svg";
   static const String scanQrCode = "$path/scan_qr.svg";
+  static const String activeSharing = "$path/active_sharing.svg";
 }

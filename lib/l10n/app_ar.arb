@@ -95,5 +95,13 @@
       "confirmPasswordError":"تأكيد كلمة المرور غير صحيح",
       "@confirmPasswordError": {
         "description": "نص خطأ تأكيد كلمة المرور"
+      },
+      "activeSharing":"تفعيل المشاركة",
+      "@activeSharing": {
+        "description": "نص تفعيل المشاركة"
+      },
+      "addMore":"إضافة المزيد",
+      "@addMore": {
+        "description": "نص إضافة المزيد"
       }
 }

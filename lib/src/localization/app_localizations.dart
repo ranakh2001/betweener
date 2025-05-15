@@ -226,6 +226,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Does not match the password'**
   String get confirmPasswordError;
+
+  /// Active Sharing text
+  ///
+  /// In en, this message translates to:
+  /// **'Active Sharing'**
+  String get activeSharing;
+
+  /// Add more text
+  ///
+  /// In en, this message translates to:
+  /// **'Add more'**
+  String get addMore;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

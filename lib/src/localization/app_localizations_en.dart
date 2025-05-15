@@ -73,4 +73,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get confirmPasswordError => 'Does not match the password';
+
+  @override
+  String get activeSharing => 'Active Sharing';
+
+  @override
+  String get addMore => 'Add more';
 }

@@ -73,4 +73,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get confirmPasswordError => 'تأكيد كلمة المرور غير صحيح';
+
+  @override
+  String get activeSharing => 'تفعيل المشاركة';
+
+  @override
+  String get addMore => 'إضافة المزيد';
 }
